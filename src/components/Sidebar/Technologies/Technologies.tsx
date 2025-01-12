@@ -1,4 +1,4 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import Image from 'next/image'
 import { Card } from '../../ui/card'
 
@@ -15,22 +15,22 @@ const mainTechs: Tech[] = [
   { name: 'Ant Design', icon: 'antdesign' },
 ]
 
-const additionalTechs: Tech[] = [
-  { name: 'Next.js', icon: 'nextjs' },
-  { name: 'TypeScript', icon: 'typescript' },
-  { name: 'Node.js', icon: 'nodejs' },
-  { name: 'MongoDB', icon: 'mongodb' },
-  { name: 'MySQL', icon: 'mysql' },
-  { name: 'CodeIgniter', icon: 'codeigniter' },
-  { name: 'Bootstrap', icon: 'bootstrap' },
-  { name: 'AWS', icon: 'amazonwebservices' },
-  { name: 'Git', icon: 'git' },
-  { name: 'GitHub', icon: 'github' },
-  { name: 'Figma', icon: 'figma' },
-]
+// const additionalTechs: Tech[] = [
+//   { name: 'Next.js', icon: 'nextjs' },
+//   { name: 'TypeScript', icon: 'typescript' },
+//   { name: 'Node.js', icon: 'nodejs' },
+//   { name: 'MongoDB', icon: 'mongodb' },
+//   { name: 'MySQL', icon: 'mysql' },
+//   { name: 'CodeIgniter', icon: 'codeigniter' },
+//   { name: 'Bootstrap', icon: 'bootstrap' },
+//   { name: 'AWS', icon: 'amazonwebservices' },
+//   { name: 'Git', icon: 'git' },
+//   { name: 'GitHub', icon: 'github' },
+//   { name: 'Figma', icon: 'figma' },
+// ]
 
 const Technologies = () => {
-  const [isExpanded, setIsExpanded] = useState(false)
+  // const [isExpanded, setIsExpanded] = useState(false)
 
   return (
     <div className='px-6 py-8 bg-slate-100 px[-3] rounded-lg'>
