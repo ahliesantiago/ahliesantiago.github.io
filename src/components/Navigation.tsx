@@ -19,10 +19,11 @@ const Navigation = () => {
   return (
     <Navbar>
       <NavbarBrand>
-      <p className='text-4xl'>
-        Ahlie&apos;s Portfolio
-      </p>
+        <p className='text-4xl'>
+          Ahlie&apos;s Portfolio
+        </p>
       </NavbarBrand>
+
       <NavbarContent className="hidden sm:flex gap-4">
         <NavbarItem>
           Projects
@@ -34,6 +35,7 @@ const Navigation = () => {
           Contact
         </NavbarItem>
       </NavbarContent>
+
       <NavbarContent justify='end'>
         <Switch
           isSelected={theme === 'light'}

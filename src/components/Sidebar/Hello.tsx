@@ -6,7 +6,7 @@ const Hello = () => {
   const [caretVisible, setCaretVisible] = useState(true)
   const [preBlinkCount, setPreBlinkCount] = useState(0)
   const [postBlinkCount, setPostBlinkCount] = useState(0)
-  const message = 'Hello, World!'
+  const message = 'My Arsenal >>>'
   const maxBlinks = 4 * 2
   const typingSpeed = 150 // for testing. final is 150 - 200
   const caretBlinkSpeed = 500
@@ -21,9 +21,9 @@ const Hello = () => {
       caretBlinkInterval = setInterval(() => {
         setCaretVisible((prev) => !prev)
         
-        if (preBlinkCount < (maxBlinks - 3)) {
+        if (preBlinkCount < (maxBlinks - 4)) {
           setPreBlinkCount((prev) => prev + 1)
-        } else if (preBlinkCount === (maxBlinks - 3)) {
+        } else if (preBlinkCount === (maxBlinks - 4)) {
           clearInterval(caretBlinkInterval)
           setPreBlinkCount(0)
           setIsTyping(true)
@@ -69,9 +69,9 @@ const Hello = () => {
   }, [preBlinkCount, postBlinkCount, text, maxBlinks, isTyping])
 
   return (
-    <div className='text-3xl font-[family-name:var(--font-geist-mono)] min-h-10'>
+    <div className='text-2xl font-[family-name:var(--font-geist-mono)] min-h-10'>
       {text}
-      {caretVisible && <span className='text-3xl'>|</span>}
+      {caretVisible && <span className='text-2xl'>|</span>}
     </div>
   )
 }
