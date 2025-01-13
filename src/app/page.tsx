@@ -1,24 +1,22 @@
 'use client'
-import { useState } from 'react'
-
-import Navbar from '@/components/Navbar'
+import { useTheme } from '@/context/ThemeContext'
 import Sidebar from '@/components/Sidebar/Sidebar'
+import Navigation from '@/components/Navigation'
+import Projects from '@/components/Main/Projects'
 
 export default function Home() {
-  const [mode, setMode] = useState('light')
+  const { theme } = useTheme()
 
   return (
     <div className={`py-3 px-5 h-screen
-      ${mode === 'light' ? 'bg-white text-black'
+      ${theme === 'light' ? 'bg-white text-black'
         : 'bg-black text-white'
       }`}
     >
-      <Navbar mode={mode} setMode={setMode} />
-      <div className='grid grid-cols-4 gap-6 h-[90%] my-2'>
+      <Navigation />
+      <div className='grid grid-cols-4 gap-4 h-[90%] my-2'>
         <Sidebar />
-        <main>
-          Projects
-        </main>
+        <Projects />
       </div>
     </div>
   )
