@@ -7,27 +7,27 @@ import Image from 'next/image'
 
 const Sidebar = () => {
   return (
-    <div className='col-span-4 sm:col-span-2 lg:col-span-1'>
-      <Card className='h-full py-5'>
-        <CardContent className='h-full grid grid-rows-[auto_1fr_auto] gap-6 px-0'>
-          <div className='relative w-full h-64 flex justify-center items-center'>
-            <Image
-              aria-hidden
-              src='https://placehold.co/600x400?text=To+Be+Added'
-              width={400}
-              height={400}
-              alt='Photo of me at my desk'
-            />
-          </div>
-          <div className='px-6'>
-            <Hello />
-            <About />
-          </div>
+    <Card className='py-5'>
+      <CardContent className='h-full grid gap-3 px-0'>
+        <div className='relative w-full h-64 flex justify-center items-center'>
+          <Image
+            aria-hidden
+            src='https://placehold.co/600x400?text=To+Be+Added'
+            width={400}
+            height={400}
+            alt='Photo of me at my desk'
+          />
+        </div>
+        <div className='px-6'>
+          <Hello />
+          <About />
+        </div>
+        <div className='overflow-y-scroll'>
           <Technologies />
-          <Links />
-        </CardContent>
-      </Card>
-    </div>
+        </div>
+        <Links />
+      </CardContent>
+    </Card>
   )
 }
 

@@ -87,40 +87,36 @@ const Projects = () => {
     },
   ]
 
-  return (
-    <div className='col-span-4 sm:col-span-2 lg:col-span-3 grid grid-cols-2 gap-2'>
-      {sampleData.map((project) => {
-        const colorClass = statusMapping[project.status]
-        return (
-          <Card key={project.id} className='col-span-2 lg:col-span-1 flex flex-col'>
-            <CardHeader>
-              <CardTitle className='text-center text-2xl'>{project.name}</CardTitle>
-            </CardHeader>
-            <CardContent className='flex-grow'>
-              <div className='relative w-full h-64 flex justify-center items-center'>
-                <Image
-                  aria-hidden
-                  src={project.image}
-                  layout='fill'
-                  objectFit='cover'
-                  alt='Project image'
-                />
-              </div>
-              <CardDescription className='my-3'>{project.description}</CardDescription>
-              <div className='flex flex-wrap gap-2'>
-                {project.tech.map((techName) => (
-                  <TechCard key={techName} techName={techName} />
-                ))}
-              </div>
-            </CardContent>
-            <CardFooter>
-              <p className={`text-sm ${colorClass}`}>#{project.status}</p>
-            </CardFooter>
-          </Card>
-        )
-      })}
-    </div>
-  )
+  return sampleData.map((project) => {
+    const colorClass = statusMapping[project.status]
+    return (
+      <Card key={project.id} className='col-span-2 lg:col-span-1 flex flex-col'>
+        <CardHeader>
+          <CardTitle className='text-center text-2xl'>{project.name}</CardTitle>
+        </CardHeader>
+        <CardContent className='flex-grow'>
+          <div className='relative w-full h-64 flex justify-center items-center'>
+            <Image
+              aria-hidden
+              src={project.image}
+              layout='fill'
+              objectFit='cover'
+              alt='Project image'
+            />
+          </div>
+          <CardDescription className='my-3'>{project.description}</CardDescription>
+          <div className='flex flex-wrap gap-2'>
+            {project.tech.map((techName) => (
+              <TechCard key={techName} techName={techName} />
+            ))}
+          </div>
+        </CardContent>
+        <CardFooter>
+          <p className={`text-sm ${colorClass}`}>#{project.status}</p>
+        </CardFooter>
+      </Card>
+    )
+  })
 }
 
 export default Projects

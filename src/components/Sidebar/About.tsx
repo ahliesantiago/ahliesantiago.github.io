@@ -5,7 +5,7 @@ const About = () => {
   const currentRole = 'Web Developer'
 
   return (
-    <div className='text-sm md:text-xl'>
+    <div className='text-lg md:text-md'>
       Hi! I&apos;m Ahliesa Santiago.
 
       I am a {currentLevel} {currentRole}, with aspirations of working in Game Development.
