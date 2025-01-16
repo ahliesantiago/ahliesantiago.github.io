@@ -8,7 +8,7 @@ const Hello = () => {
   const [postBlinkCount, setPostBlinkCount] = useState(0)
   const message = 'My Arsenal >>>'
   const maxBlinks = 4 * 2
-  const typingSpeed = 150 // for testing. final is 150 - 200
+  const typingSpeed = 150
   const caretBlinkSpeed = 500
   const textIndex = useRef(0)
 
@@ -69,9 +69,9 @@ const Hello = () => {
   }, [preBlinkCount, postBlinkCount, text, maxBlinks, isTyping])
 
   return (
-    <div className='text-2xl font-[family-name:var(--font-geist-mono)] min-h-10'>
+    <div className='text-2xl lg:text-sm xl:text-2xl font-[family-name:var(--font-geist-mono)] min-h-10'>
       {text}
-      {caretVisible && <span className='text-2xl'>|</span>}
+      {caretVisible && <span className='text-2xl lg:text-sm xl:text-2xl'>|</span>}
     </div>
   )
 }
