@@ -13,8 +13,9 @@ const Sidebar = () => {
           <Image
             aria-hidden
             src='https://placehold.co/600x400?text=To+Be+Added'
-            width={400}
+            width={600}
             height={400}
+            className='object-cover w-full h-full'
             alt='Photo of me at my desk'
           />
         </div>

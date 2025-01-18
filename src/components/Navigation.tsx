@@ -17,14 +17,14 @@ const Navigation = () => {
   }
 
   return (
-    <Navbar>
+    <Navbar className='py-2 border-b-1 border-b-gray-400'>
       <NavbarBrand>
         <p className='text-4xl'>
           Ahlie&apos;s Portfolio
         </p>
       </NavbarBrand>
 
-      <NavbarContent className="hidden sm:flex gap-4">
+      <NavbarContent className="hidden sm:flex gap-4" justify='center'>
         <NavbarItem>
           Projects
         </NavbarItem>

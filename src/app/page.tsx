@@ -8,15 +8,15 @@ export default function Home() {
   const { theme } = useTheme()
 
   return (
-    <div className={`py-3 px-5 h-screen
+    <div className={`h-screen
       ${theme === 'light' ? 'bg-white text-black' : 'bg-black text-white'}`}
     >
       <Navigation />
-      <div className='grid grid-cols-4 gap-4 min-h-[90%] my-3'>
+      <div className='grid grid-cols-4 gap-4 min-h-[90%] my-3 px-5'>
         <div className='md:h-[calc(90vh)] col-span-4 sm:col-span-2 lg:col-span-1 md:sticky md:top-20'>
           <Sidebar />
         </div>
-        <div className='col-span-4 sm:col-span-2 lg:col-span-3 grid grid-cols-2 gap-2 overflow-auto'>
+        <div className='col-span-4 sm:col-span-2 lg:col-span-3'>
           <Projects />
         </div>
       </div>

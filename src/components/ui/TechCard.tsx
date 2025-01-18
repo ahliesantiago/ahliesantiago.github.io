@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Card } from '../ui/card'
 import { useTheme } from '@/context/ThemeContext'
+import { useFilter } from '@/context/FilterContext'
 
 interface Tech {
   name: string
@@ -42,6 +43,7 @@ const getImageUrls = (tech: Tech, theme: string) => {
 
 const TechCard = ({ techName }: { techName: string }) => {
   const { theme } = useTheme()
+  const { techFilter, setTechFilter } = useFilter()
   const tech = technologies.find((t) => t.name === techName)
   if (!tech) return null
 
@@ -52,8 +54,17 @@ const TechCard = ({ techName }: { techName: string }) => {
     return mainSrc
   }
 
+  // Sets or unsets the technology filter
+  const handleClick = () => {
+    setTechFilter(techFilter === tech.name ? null : tech.name)
+  }
+
   return (
-    <Card className='h-10 flex items-center gap-2 rounded-lg px-4 shadow-sm border border-gray-200'>
+    <Card
+      className={`h-10 flex items-center gap-2 rounded-lg px-4 shadow-sm cursor-pointer border border-gray-200
+        ${techFilter === tech.name ? 'ring-1 dark:ring-gray-200' : ''}`}
+      onClick={handleClick}
+    >
       <Image
         aria-hidden
         src={getImageSrc()}

@@ -69,9 +69,9 @@ const Hello = () => {
   }, [preBlinkCount, postBlinkCount, text, maxBlinks, isTyping])
 
   return (
-    <div className='text-2xl lg:text-sm xl:text-2xl font-[family-name:var(--font-geist-mono)] min-h-10'>
+    <div className='text-2xl lg:text-sm xl:text-xl 2xl:text-2xl font-[family-name:var(--font-geist-mono)] min-h-10 flex items-center'>
       {text}
-      {caretVisible && <span className='text-2xl lg:text-sm xl:text-2xl'>|</span>}
+      {caretVisible && <span className='text-2xl lg:text-sm xl:text-xl 2xl:text-2xl'>|</span>}
     </div>
   )
 }

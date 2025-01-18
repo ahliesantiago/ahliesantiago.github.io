@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "name": "POS-Lite v2",
+    "description": "A lite point of sale system with inventory tracking, designed for small businesses, built with the VILT stack.",
+    "image": "https://placehold.co/600x400?text=Project+Image",
+    "tech": ["PHP", "Laravel", "vue", "PostGreSQL"],
+    "status": "inprogress",
+    "linkRepo": "https://github.com/ahliesantiago/pos-lite",
+    "linkDemoSite": "",
+    "linkDemoVideo": ""
+  },
+  {
+    "id": 2,
+    "name": "StoryMD",
+    "description": "A repository for your stories, its actual content, and wiki-like pages for your story elements, characters, settings, etc..",
+    "image": "https://placehold.co/600x400?text=Project+Image",
+    "tech": ["PHP", "Laravel", "MySQL"],
+    "status": "shelved (basic done)",
+    "linkRepo": "https://github.com/ahliesantiago/storymd-vilt",
+    "linkDemoSite": "",
+    "linkDemoVideo": ""
+  },
+  {
+    "id": 3,
+    "name": "POS-Lite v1",
+    "description": "A lite point of sale system with inventory tracking, designed for small businesses, built with CodeIgniter.",
+    "image": "https://placehold.co/600x400?text=Project+Image",
+    "tech": ["PHP", "CodeIgniter", "MySQL"],
+    "status": "shelved (barebones)",
+    "linkRepo": "https://github.com/ahliesantiago/pos-and-inventory-tracker",
+    "linkDemoSite": "",
+    "linkDemoVideo": ""
+  },
+  {
+    "id": 4,
+    "name": "Multiplayer Minigame",
+    "description": "My multiplayer game project for my bootcamp.",
+    "image": "https://placehold.co/600x400?text=Project+Image",
+    "tech": ["JavaScript", "Node.js", "Socket.IO"],
+    "status": "shelved (barebones)",
+    "linkRepo": "https://github.com/ahliesantiago/multiplayer-game1",
+    "linkDemoSite": "",
+    "linkDemoVideo": ""
+  },
+  {
+    "id": 5,
+    "name": "Social Media app clone 1",
+    "description": "A social media clone web app developed while I was learning and practicing Ruby on Rails.",
+    "image": "https://placehold.co/600x400?text=Project+Image",
+    "tech": ["Ruby on Rails"],
+    "status": "shelved (barebones)",
+    "linkRepo": "https://github.com/ahliesantiago/socmed-ror",
+    "linkDemoSite": "",
+    "linkDemoVideo": "https://www.youtube.com/watch?v=1Tt1IUG2-b4"
+  },
+  {
+    "id": 6,
+    "name": "Dating app clone 2",
+    "description": "A dating app clone web app developed while I was learning and practicing ReactJS.",
+    "image": "https://placehold.co/600x400?text=Project+Image",
+    "tech": ["React"],
+    "status": "shelved (barebones)",
+    "linkRepo": "https://github.com/ahliesantiago/tropa-app",
+    "linkDemoSite": "",
+    "linkDemoVideo": ""
+  },
+  {
+    "id": 7,
+    "name": "E-commerce web app",
+    "description": "An e-commerce website built with PHP and CodeIgniter 3 (FE provided by bootcamp dev).",
+    "image": "https://placehold.co/600x400?text=Project+Image",
+    "tech": ["PHP", "CodeIgniter"],
+    "status": "abandoned",
+    "linkRepo": "https://github.com/ahliesantiago/ecommerce-webapp-ci",
+    "linkDemoSite": "",
+    "linkDemoVideo": "https://www.youtube.com/watch?v=bt39iBWxS3c"
+  }
+]
