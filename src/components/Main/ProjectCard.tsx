@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from '../ui/card'
 import { Button } from '../ui/button'
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useTheme } from '@/context/ThemeContext'
@@ -62,7 +63,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
     return url // Return original URL if not a YouTube link
   }
   let imageUrl = ''
-  if (project.image.toLowerCase().includes("placehold") && project.linkDemoVideo) {
+  if (project.image.toLowerCase().includes('placehold') && project.linkDemoVideo) {
     imageUrl = getYouTubeThumbnail(project.linkDemoVideo)
   } else {
     imageUrl = project.image
@@ -74,17 +75,40 @@ const ProjectCard = ({ project }: { project: Project }) => {
         <CardTitle className='text-center text-2xl'>{project.name}</CardTitle>
       </CardHeader>
       <CardContent className='flex-grow pb-3'>
-        <div className='relative w-full h-64 flex justify-center items-center'>
-          <Image
-            aria-hidden
-            src={imageUrl}
-            width={600}
-            height={400}
-            className='object-cover w-full h-full'
-            alt='Project image'
-            sizes='(max-width: 768px) 100vw, 50vw'
-          />
-        </div>
+        <Dialog>
+          <DialogTrigger asChild>
+            <div className='relative w-full h-64 flex justify-center items-center bg-gray-100 dark:bg-gray-800 cursor-pointer'>
+              <Image
+                aria-hidden
+                src={imageUrl}
+                width={600}
+                height={500}
+                className='object-contain w-full h-full hover:scale-110 transition-transform'
+                alt='Project image'
+                sizes='(max-width: 768px) 100vw, 50vw'
+              />
+            </div>
+          </DialogTrigger>
+          <DialogContent className='hidden lg:flex flex-col w-[1200px] min-h-[400px] max-w-[95vw] max-h-[95vh] p-6'>
+            <DialogHeader className='mb-4'>
+              <DialogTitle className='text-2xl'>{project.name}</DialogTitle>
+              <DialogDescription className='text-base'>
+                {project.description}
+              </DialogDescription>
+            </DialogHeader>
+            <div className='flex-1 relative flex items-center justify-center overflow-hidden'>
+              <Image
+                src={imageUrl}
+                width={1920}
+                height={1080}
+                alt='Project image'
+                className='object-contain w-full h-auto max-h-full'
+                sizes='95vw'
+                priority
+              />
+            </div>
+          </DialogContent>
+        </Dialog>
         <CardDescription className='my-3'>{project.description}</CardDescription>
         <div className='flex flex-wrap gap-2'>
           {project.tech.map((techName) => (
