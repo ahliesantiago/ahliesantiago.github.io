@@ -4,6 +4,7 @@ import About from './About'
 import Links from './Links'
 import Image from 'next/image'
 import TechButton from './TechButton'
+import Photo from '../../../public/assets/images/Desk.jpeg'
 
 const Sidebar = () => {
   return (
@@ -12,11 +13,11 @@ const Sidebar = () => {
         <div className='relative w-full h-64 flex justify-center items-center'>
           <Image
             aria-hidden
-            src='https://placehold.co/600x400?text=To+Be+Added'
+            src={Photo}
             width={600}
             height={400}
             className='object-cover w-full h-full'
-            alt='Photo of me at my desk'
+            alt='workspace snap'
           />
         </div>
         <div className='flex flex-col gap-4'>
