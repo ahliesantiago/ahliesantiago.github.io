@@ -40,6 +40,7 @@ const technologies: Tech[] = [
   { name: 'SQLite', icon: 'sqlite' },
   { name: 'Tailwind', icon: 'tailwindcss' },
   { name: 'TypeScript', icon: 'typescript' },
+  { name: 'Vue', icon: 'vuejs' },
 ]
 
 const getImageUrls = (tech: Tech, theme: string) => {
