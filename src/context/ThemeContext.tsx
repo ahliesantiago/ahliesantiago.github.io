@@ -28,10 +28,7 @@ export function ThemeProvider({
   ...props
 }: Readonly<ThemeProviderProps>) {
   const [theme, setTheme] = useState<Theme>(defaultTheme)
-  const [mounted, setMounted] = useState(false)
-
   useEffect(() => {
-    setMounted(true)
     if (typeof window !== 'undefined') {
       const storedTheme = localStorage.getItem(storageKey) as Theme
       if (storedTheme) {
