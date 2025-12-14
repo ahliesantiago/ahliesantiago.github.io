@@ -34,6 +34,8 @@ export default function RootLayout({
             {children}
           </FilterProvider>
         </ThemeProvider>
+
+        <script src="https://web3forms.com/client/script.js" async defer></script>
       </body>
     </html>
   )

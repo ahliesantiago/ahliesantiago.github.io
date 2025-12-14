@@ -9,7 +9,7 @@ import {
 import { useTheme } from '../context/ThemeContext'
 
 
-const Navigation = () => {
+const Navigation = ({ onNavClick }: { onNavClick: (section: 'projects' | 'contact') => void }) => {
   const { theme, setTheme } = useTheme()
 
   const toggleTheme = (isSelected: boolean) => {
@@ -18,20 +18,17 @@ const Navigation = () => {
 
   return (
     <Navbar className='py-2 border-b-1 border-b-gray-400'>
-      <NavbarBrand>
-        <p className='text-4xl'>
+      <NavbarBrand className='cursor-pointer' onClick={() => onNavClick('projects')}>
+        <p className='text-3xl italic font-[family-name:var(--font-geist-mono)]'>
           Ahlie&apos;s Portfolio
         </p>
       </NavbarBrand>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify='center'>
-        <NavbarItem>
+      <NavbarContent className='hidden sm:flex gap-28' justify='center'>
+        <NavbarItem className='cursor-pointer' onClick={() => onNavClick('projects')}>
           Projects
         </NavbarItem>
-        <NavbarItem>
-          Credentials
-        </NavbarItem>
-        <NavbarItem>
+        <NavbarItem className='cursor-pointer' onClick={() => onNavClick('contact')}>
           Contact
         </NavbarItem>
       </NavbarContent>

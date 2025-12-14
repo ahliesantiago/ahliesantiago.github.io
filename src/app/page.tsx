@@ -5,11 +5,13 @@ import Sidebar from '@/components/Sidebar/Sidebar'
 import Navigation from '@/components/Navigation'
 import Projects from '@/components/Main/Projects'
 import Banner from '@/components/Banner'
+import Contact from '@/components/Main/Contact'
 
 export default function Home() {
   const { theme } = useTheme()
   const [mounted, setMounted] = useState(false)
   const [scrollY, setScrollY] = useState(0)
+  const [activeSection, setActiveSection] = useState<'projects' | 'contact' | null>('projects')
 
   useEffect(() => {
     setMounted(true)
@@ -42,7 +44,7 @@ export default function Home() {
           navbarVisible ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
-        <Navigation />
+        <Navigation onNavClick={setActiveSection} />
       </div>
 
       {/* Banner Section - fades out on scroll */}
@@ -74,7 +76,8 @@ export default function Home() {
             <Sidebar />
           </div>
           <div className='col-span-4 md:col-span-2 lg:col-span-3'>
-            <Projects />
+            {activeSection === 'projects' && <Projects />}
+            {activeSection === 'contact' && <Contact />}
           </div>
         </div>
       </div>
