@@ -5,7 +5,7 @@
     "description": "A lite point of sale system with inventory tracking, designed for small businesses, built with the VILT stack.",
     "image": "/assets/projects/ss POS-Lite 02a.png",
     "tech": ["PHP", "Laravel", "Vue", "SQLite", "PostgreSQL"],
-    "status": "inprogress",
+    "status": "shelved (basic done)",
     "linkRepo": "https://github.com/ahliesantiago/pos-lite",
     "linkDemoSite": "",
     "linkDemoVideo": ""
@@ -27,7 +27,7 @@
     "description": "A lite point of sale system with inventory tracking, designed for small businesses, built with CodeIgniter.",
     "image": "https://placehold.co/600x400?text=Project+Image+TBA",
     "tech": ["PHP", "CodeIgniter", "MySQL"],
-    "status": "shelved (barebones)",
+    "status": "abandoned",
     "linkRepo": "https://github.com/ahliesantiago/pos-and-inventory-tracker",
     "linkDemoSite": "",
     "linkDemoVideo": ""
@@ -58,7 +58,7 @@
     "id": 6,
     "name": "Tropa (Dating app clone)",
     "description": "A dating app clone web app developed while I was learning and practicing MERN.",
-    "image": "https://placehold.co/600x400?text=Project+Image+TBA",
+    "image": "/assets/projects/ss SMTropa 01a.png",
     "tech": ["React", "Express", "Node.js", "MongoDB", "Mongoose"],
     "status": "shelved (barebones)",
     "linkRepo": "https://github.com/ahliesantiago/tropa-app",
@@ -71,7 +71,7 @@
     "description": "An e-commerce website built with PHP and CodeIgniter 3 (FE provided by bootcamp dev).",
     "image": "https://placehold.co/600x400?text=Project+Image+TBA",
     "tech": ["PHP", "CodeIgniter", "MySQL"],
-    "status": "abandoned",
+    "status": "shelved (basic done)",
     "linkRepo": "https://github.com/ahliesantiago/ecommerce-webapp-ci",
     "linkDemoSite": "",
     "linkDemoVideo": "https://www.youtube.com/watch?v=bt39iBWxS3c"
@@ -82,8 +82,74 @@
     "description": "A social media clone web app developed while I was learning and practicing React and AWS.",
     "image": "/assets/projects/ss SMclone 02a.png",
     "tech": ["React", "AWS"],
-    "status": "shelved (barebones)",
+    "status": "shelved (basic done)",
     "linkRepo": "https://github.com/ahliesantiago/socmed-awsreact",
+    "linkDemoSite": "",
+    "linkDemoVideo": ""
+  },
+  {
+    "id": 9,
+    "name": "Inventory Management System",
+    "description": "An app for tracking and maintaining home inventory, recipe, and grocery/shopping lists.",
+    "image": "https://placehold.co/600x400?text=Project+Image+TBA",
+    "tech": ["TypeScript", "Vue", "Express", "Node.js", "PostgreSQL"],
+    "status": "shelved (basic done)",
+    "linkRepo": "https://github.com/ahliesantiago/inventory-recipe-mgmt",
+    "linkDemoSite": "",
+    "linkDemoVideo": ""
+  },
+  {
+    "id": 10,
+    "name": "Web & File Scraper",
+    "description": "A customizable, template-based web scraping app that accepts user-defined parameters for smarter, more customizable field detection and data extraction from web pages and files.",
+    "image": "https://placehold.co/600x400?text=Project+Image+TBA",
+    "tech": ["Python"],
+    "status": "shelved (barebones)",
+    "linkRepo": "https://github.com/ahliesantiago/web-scraper",
+    "linkDemoSite": "",
+    "linkDemoVideo": ""
+  },
+  {
+    "id": 11,
+    "name": "Hospital Management System",
+    "description": " A CLI application for basic management of core hospital records. ",
+    "image": "https://placehold.co/600x400?text=Project+Image+TBA",
+    "tech": ["Java"],
+    "status": "shelved (basic done)",
+    "linkRepo": "https://github.com/ahliesantiago/hospital-mgmt-system",
+    "linkDemoSite": "",
+    "linkDemoVideo": ""
+  },
+  {
+    "id": 12,
+    "name": "Visual Day Planner",
+    "description": "A visual planning and journal app designed for planning your days visually.",
+    "image": "https://placehold.co/600x400?text=Project+Image+TBA",
+    "tech": ["TypeScript", "Next.js"],
+    "status": "shelved (barebones)",
+    "linkRepo": "https://github.com/ahliesantiago/dbd",
+    "linkDemoSite": "",
+    "linkDemoVideo": ""
+  },
+  {
+    "id": 13,
+    "name": "Task Management REST API",
+    "description": "A task management REST API supporting standard CRUD operations.",
+    "image": "https://placehold.co/600x400?text=Project+Image+TBA",
+    "tech": ["Java", "Spring Boot", "PostgreSQL", "Docker"],
+    "status": "shelved (barebones)",
+    "linkRepo": "https://github.com/ahliesantiago/task-api-springboot",
+    "linkDemoSite": "",
+    "linkDemoVideo": ""
+  },
+  {
+    "id": 14,
+    "name": "Earnings Calculator API",
+    "description": "A REST API for calculating expected monthly earnings in the Philippines post-deductions, with a simple front-end that optionally offers customizable budget suggestions.",
+    "image": "https://placehold.co/600x400?text=Project+Image+TBA",
+    "tech": ["TypeScript", "Python", "GCP", "Docker"],
+    "status": "inprogress",
+    "linkRepo": "",
     "linkDemoSite": "",
     "linkDemoVideo": ""
   }

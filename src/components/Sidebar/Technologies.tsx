@@ -4,8 +4,8 @@ import TechCard from '@/components/ui/TechCard'
 
 const Technologies = () => {
   const [isExpanded, setIsExpanded] = useState(false)
-  const mainTechs: string[] = ['JavaScript', 'React', 'Vue', 'Tailwind', 'PHP', 'Laravel']
-  const additionalTechs: string[] = [ 'Next.js', 'TypeScript', 'Node.js', 'CodeIgniter', 'Ruby', 'Ruby on Rails', 'Python', 'Java', 'Spring Boot', 'AWS', 'Docker', 'jQuery', 'Express', 'MongoDB', 'Mongoose', 'MySQL', 'PostgreSQL', 'SQLite', 'DynamoDB', 'GraphQL', 'Git', 'GitHub', 'Bootstrap', 'shadcn', 'Ant Design']
+  const mainTechs: string[] = ['JavaScript', 'TypeScript', 'React', 'Vue', 'Tailwind', 'PHP', 'Laravel']
+  const additionalTechs: string[] = ['Next.js', 'Node.js', 'CodeIgniter', 'Ruby', 'Ruby on Rails', 'Python', 'Java', 'Spring Boot', 'AWS', 'Docker', 'jQuery', 'Express', 'MongoDB', 'Mongoose', 'MySQL', 'PostgreSQL', 'SQLite', 'DynamoDB', 'GraphQL', 'Git', 'GitHub', 'CSS', 'Bootstrap', 'shadcn', 'Ant Design']
 
   return (
     <div className='flex flex-wrap gap-2'>
