@@ -15,12 +15,14 @@ const technologies: Tech[] = [
   { name: 'Ant Design', icon: 'antdesign' },
   { name: 'Bootstrap', icon: 'bootstrap' },
   { name: 'CodeIgniter', icon: 'codeigniter', specificIcon: 'codeigniter-plain' },
+  { name: 'Docker', icon: 'docker' },
   { name: 'DynamoDB', icon: 'dynamodb' },
   { name: 'Express', icon: 'express', isDark: true },
   { name: 'Figma', icon: 'figma' },
   { name: 'Git', icon: 'git' },
   { name: 'GitHub', icon: 'github', isDark: true },
   { name: 'GraphQL', icon: 'graphql', specificIcon: 'graphql-plain' },
+  { name: 'Java', icon: 'java' },
   { name: 'JavaScript', icon: 'javascript' },
   { name: 'jQuery', icon: 'jquery' },
   { name: 'Laravel', icon: 'laravel' },
@@ -37,6 +39,7 @@ const technologies: Tech[] = [
   { name: 'Ruby on Rails', icon: 'rails', specificIcon: 'rails-plain' },
   { name: 'shadcn', icon: 'shadcnui' },
   { name: 'Socket.IO', icon: 'Socket.io', isDark: true },
+  { name: 'Spring Boot', icon: 'springboot' },
   { name: 'SQLite', icon: 'sqlite' },
   { name: 'Tailwind', icon: 'tailwindcss' },
   { name: 'TypeScript', icon: 'typescript' },
@@ -47,7 +50,7 @@ const getImageUrls = (tech: Tech, theme: string) => {
   const mainSrc = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${tech.icon}/${tech.icon}-original.svg`
   const specificSrc = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${tech.icon}/${tech.specificIcon}.svg`
   const fallbackSrc = `https://cdn.simpleicons.org/${tech.icon}/000000${theme === 'light' ? '' : '/ffffff'}`
-  
+
   return { mainSrc, specificSrc, fallbackSrc }
 }
 
