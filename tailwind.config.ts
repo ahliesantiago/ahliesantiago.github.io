@@ -1,4 +1,5 @@
 import {nextui} from '@nextui-org/theme';
+import tailwindcssAnimate from "tailwindcss-animate";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -57,8 +58,31 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
+  		},
+  		keyframes: {
+  			wave: {
+  				'0%, 100%': { transform: 'rotate(0deg)' },
+  				'10%, 30%': { transform: 'rotate(14deg)' },
+  				'20%': { transform: 'rotate(-8deg)' },
+  				'40%': { transform: 'rotate(-4deg)' },
+  				'50%': { transform: 'rotate(10deg)' },
+  			},
+  			'bounce-slow': {
+  				'0%, 100%': {
+  					transform: 'translateY(0)',
+  					animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)',
+  				},
+  				'50%': {
+  					transform: 'translateY(-25%)',
+  					animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
+  				},
+  			},
+  		},
+  		animation: {
+  			wave: 'wave 2s ease-in-out infinite',
+  			'bounce-slow': 'bounce-slow 2s ease-in-out infinite',
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate"),nextui()],
+  plugins: [tailwindcssAnimate, nextui()],
 } satisfies Config;

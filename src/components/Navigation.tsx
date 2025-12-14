@@ -17,7 +17,7 @@ const Navigation = () => {
   }
 
   return (
-    <Navbar className='fixed top-0 left-0 right-0 z-50 py-2 border-b-1 border-b-gray-400'>
+    <Navbar className='py-2 border-b-1 border-b-gray-400'>
       <NavbarBrand>
         <p className='text-4xl'>
           Ahlie&apos;s Portfolio
