@@ -27,7 +27,7 @@ export default function Home() {
   }, [])
 
   // Calculate opacity for banner elements based on scroll
-  const bannerOpacity = Math.max(0, 1 - scrollY / 800)
+  const bannerOpacity = Math.max(0, 1 - scrollY / 700)
   const arrowOpacity = Math.max(0, 1 - scrollY / 400)
   const navbarVisible = scrollY > window.innerHeight * 0.7
   const contentVisible = scrollY > window.innerHeight * 0.4
@@ -71,7 +71,7 @@ export default function Home() {
         }`}
         style={{ paddingTop: '100vh' }}
       >
-        <div className='grid grid-cols-4 gap-4 min-h-[90%] my-3 px-5 pt-20 pb-5'>
+        <div className='grid grid-cols-4 gap-4 min-h-[90%] my-3 px-5 pb-5'>
           <div className='col-span-4 md:col-span-2 lg:col-span-1 md:sticky md:top-28 md:self-start md:max-h-screen'>
             <Sidebar />
           </div>
