@@ -29,8 +29,8 @@ export default function Home() {
   // Calculate opacity for banner elements based on scroll
   const bannerOpacity = Math.max(0, 1 - scrollY / 700)
   const arrowOpacity = Math.max(0, 1 - scrollY / 400)
-  const navbarVisible = scrollY > window.innerHeight * 0.7
-  const contentVisible = scrollY > window.innerHeight * 0.4
+  const navbarVisible = mounted && scrollY > window.innerHeight * 0.7
+  const contentVisible = mounted && scrollY > window.innerHeight * 0.4
 
   return (
     <div
